@@ -1,0 +1,572 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282d32;
+    height: 64px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+header * {
+    margin: 0 5px;
+}
+
+#navLeft {
+    display: flex;
+    align-items: center;
+}
+
+#navRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#githubLogo {
+    height: 32px;
+}
+
+#navSearchBox {
+    max-height: 30px;
+    height: 28px;
+    width: 300px;
+    color: #8c8d91;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: #42454a;
+    padding-left: 8px;
+}
+
+a,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+#plusIcon {
+    height: 20px;
+}
+
+#profileThumb img {
+    max-height: 20px;
+}
+
+#container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+#profileImageCard {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 272px;
+}
+
+#profileImageCard>img {
+    width: 100%;
+    height: 271px;
+    border-radius: 3px;
+}
+
+#profileCardText {
+    display: flex;
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 5px;
+    border: 1px solid #e1e4e8;
+    border-top: none;
+    border-radius: 3px;
+}
+
+#profileCardSmiley {
+    margin-right: 15px;
+}
+
+#profileCardText p {
+    font-size: 12px;
+    color: #586069;
+}
+
+#profileImageCard h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#profileImageCard h3 {
+    margin-top: 3px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #586069;
+}
+
+#profileImageCard button {
+    height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f3f7f9;
+    border: 1px solid rgba(27, 31, 35, .2);
+    border-radius: .25em;
+}
+
+#mainContent {
+    width: 62%;
+    height: fit-content;
+    margin-left: 50px;
+}
+
+#mainSectionTabs {
+    display: flex;
+    height: 55px;
+    font-size: .9em;
+    border-bottom: 1px solid #d1d5da;
+}
+
+#mainSectionTabs>* {
+    display: flex;
+    color: #586069;
+    margin-right: 25px;
+}
+
+#overviewTab {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    border-bottom: 2px solid #e36209;
+}
+
+#overviewTab p {
+    color: #282d32;
+    font-weight: bold;
+    width: 70px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    font-weight: bold;
+    height: 18px;
+    width: 18px;
+    background-color: #edecee;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+#repositoriesTab .tabCircle {
+    width: 24px;
+    border-radius: 20px;
+}
+
+#pinnedDiv {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#pinnedDiv h6 {
+    font-size: .8em;
+    color: #586069;
+}
+
+#reposDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: row;
+}
+
+.repoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.repos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    width: 45.7%;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    padding: 13px 15px;
+}
+
+.repos h4 {
+    color: #0366d6;
+    font-size: .95em;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.repos p {
+    font-size: .75em;
+    line-height: 1.5em;
+    color: #586069;
+    height: 40px;
+}
+
+.languageCircle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: fit-content;
+}
+
+.cssCircle {
+    height: 12px;
+    width: 12px;
+    background-color: #611b7b;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.jsCircle {
+    height: 12px;
+    width: 12px;
+    background-color: #ebef5a;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.htmlCircle {
+    height: 12px;
+    width: 12px;
+    background-color: #f4071e;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.repos h5 {
+    font-size: .8em;
+}
+
+.repoTitle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bookmarkTitle {
+    display: flex;
+    align-items: center;
+}
+
+#contributionsHeader {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #24292e;
+}
+
+#contributionsHeader h6 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: .8em;
+    color: #586069;
+}
+
+#contributionsGrid {
+    display: flex;
+    color: #585f69;
+    height: 130px;
+    width: 100%;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 20px 0;
+}
+
+#tableHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contributionHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    color: #24292e;
+}
+
+#contributionActivity {
+    color: #585f69;
+}
+
+#purp2019 {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 110px;
+    background-color: #0265d6;
+    color: #fff;
+    border-radius: 3px;
+    padding-left: 12px;
+    font-size: .8em;
+}
+
+
+#juneBorder {
+    display: flex;
+    align-items: center;
+    font-size: .8em;
+    font-weight: bold;
+    color: #282d32;
+}
+
+#juneBorder span {
+    color: #585f69;
+    margin-right: 10px;
+}
+
+#borderLine {
+    display: flex;
+    width: 77%;
+    height: 1px;
+    border-top: 1px solid #e6ebf1;
+}
+
+#contributionRow {
+    display: flex;
+    flex-direction: row;
+}
+
+#contColumn1 {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 15px;
+    margin-top: 7px;
+    border-left: 2px solid #e6ebf1;
+}
+
+.contTopLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#commitTopLine img {
+    max-height: 18px;
+}
+
+#createdCommits {
+    padding-left: 20px;
+}
+
+.createdCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #e6ebf1;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+}
+
+#repoLogoTitle {
+    display: flex;
+    align-items: center;
+}
+
+#repoLogoTitle h4 {
+    position: relative;
+    left: -25px;
+}
+
+#createdCommits {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e6ebf1;
+}
+
+#createdRepositories {
+    padding-left: 20px;
+    padding-bottom: 40px;
+    /* border-bottom: 1px solid #e6ebf1; */
+}
+
+#commitLogoTitle {
+    display: flex;
+    align-items: center;
+}
+
+#commitLogoTitle h4 {
+    position: relative;
+    left: -25px;
+}
+
+#commitBottomLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+#loopyCommit {
+    display: flex;
+    align-items: center;
+}
+
+#loopyCommit h5 {
+    margin-right: 10px;
+    font-size: .9em;
+    color: #0366d6;
+}
+
+#loopyCommit h6 {
+    font-size: .8em;
+}
+
+#greenBar {
+    height: 8px;
+    width: 170px;
+    background-color: #006d2d;
+    border-radius: 2px;
+}
+
+#contColumn2 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    font-size: .8em;
+}
+
+#contColumn2 h6 {
+    margin-left: 27px;
+    margin-top: 10px;
+    /* font-size: .8em; */
+}
+
+#moreActivity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 85%;
+    border: 1px solid #d1d5da;
+    border-radius: 5px;
+    font-size: .8em;
+    font-weight: bold;
+    color: #0366d6;
+}
+
+#unexpected {
+    margin-top: 20px;
+    font-size: .75em;
+    color: #585f69;
+}
+
+#unexpected span {
+    color: #0366d6;
+}
+
+footer {
+    margin: auto;
+    margin-top: 50px;
+    width: 65%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .75em;
+    border-top: 1px solid #e6ebf1;
+}
+
+footer a {
+    color: #0366d6;
+}
+
+#githubFooterLogo {
+    margin: 0 25px;
+}
+
+#tableHeader {
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+}
+
+#tableRow .cleardiv {
+    background-color: #fffff1;
+}
+
+#tableRow {
+    display: flex;
+    justify-content: center;
+}
+
+#tableRow div {
+    height: 11px;
+    width: 11px;
+    background-color: #ebedf0;
+    margin: 2px;
+}
+
+#weekdays {
+    margin-top: 28px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 8%;
+    height: 68%;
+}
+
+#weekdays {
+    font-size: 9px;
+}
+
+#gridBottomRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.least {
+    background-color: #c6e48b !important;
+}
+
+.medium {
+    background-color: #7ac96e !important;
+}
+
+.more {
+    background-color: #509b3b !important;
+}
+
+.most {
+    background-color: #306128 !important;
+}
